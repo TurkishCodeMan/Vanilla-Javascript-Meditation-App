@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.time-container,
+.content-container,
+.weather-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  height: 80%;
+}
+
+.content-container img {
+  position: absolute;
+  height: 40%;
+  width: 50%;
+}
+
+.content-container {
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+
+
+}
+
+.content-container svg {
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -5;
+  
+}
+
+.time-display {
+  position: absolute;
+  bottom: 18%;
+  font-size: 50px;
+  color: #fff;
+}
+
+.play ,.pause {
+    color: #fff;
+    padding:1rem;
+}
+
+.time-container button{
+  background: #fff;
+  border-radius: 7px;
+  font-size: 18px;
+  color: rgb(79, 88, 95);
+}
+
+.weather-container .song-rain{
+  background:none;
+  border: none;
+}
+
+.weather-container .song-beach{
+  background:none;
+  border: none;
+}
+.weather-container button:focus{
+  outline: none;
+}
